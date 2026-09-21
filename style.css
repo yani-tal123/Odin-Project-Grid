@@ -1,0 +1,268 @@
+/* TEXT */
+
+.h4 {
+  font-size: 1rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bd-l {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.bd-m {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.bd-s {
+  font-size: 0.7rem;
+}
+
+/* OTHER */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cae9ff;
+  font-family: Roboto, sans-serif;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-auto-rows: max-content 1fr;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #5fa8d3;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  grid-row: span 2;
+}
+
+#logo-wrapper {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+#logo-icon {
+  height: 40px;
+  width: 40px;
+}
+
+#logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 10px;
+}
+
+.nav-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.icon-nav {
+  height: 24px;
+  width: 24px;
+}
+
+header {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 1px 2px 2px rgb(0 0 0 / 0.1);
+  padding: 10px 20px;
+}
+
+.header-section {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+}
+
+#search-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.icon-small {
+  height: 24px;
+  width: 24px;
+}
+
+input {
+  border: none;
+  background-color: #cae9ff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 16px;
+}
+
+#header-profile-info-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.avatar {
+  height: 52px;
+  width: 52px;
+}
+
+.avatar-l {
+  height: 64px;
+  width: 64px;
+}
+
+#username {
+  white-space: nowrap;
+}
+
+#header-greeting-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+#header-greeting-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  gap: 2px;
+}
+
+#header-buttons-wrapper {
+  display: flex;
+  gap: 6px;
+  width: fit-content;
+}
+
+.btn {
+  border: none;
+  background-color: #5fa8d3;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 6px 18px;
+  color: white;
+  border-radius: 20px;
+  letter-spacing: 2%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: auto auto;
+  align-items: start;
+  padding: 20px 10px;
+  gap: 20px;
+}
+
+#projects-section {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* CHANGE TO GRID */
+
+#project-cards {
+  overflow: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-left: 4px solid #f4a261;
+  border-radius: 4px;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.project-card-icons {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 2px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+#announcements-section, #trending-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: fit-content;
+}
+
+#trending-section {
+  align-self: start;
+}
+
+#announcements {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 2px 2px rgb(0 0 0 / 0.1);
+}
+
+.announcement-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-bottom: 1px solid #5fa8d3;
+}
+
+.announcement-item:last-child {
+  border: 0;
+}
+
+#trending {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 2px 2px rgb(0 0 0 / 0.1);
+  gap: 20px;
+  height: fit-content;
+}
+
+.trendng-item {
+  display: flex;
+  gap: 10px;  
+  align-items: center;
+}
+
+.trending-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
